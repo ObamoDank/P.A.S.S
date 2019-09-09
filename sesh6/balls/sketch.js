@@ -10,12 +10,9 @@ function setup() {
     for (let i = 0; i < 5; i++) {
         ballX.push(random(0, width));
         ballY.push(random(0, height));
-        ballR.push(random(1, 150));
+        ballR.push(random(1, 80));
         velocityX.push(random(1, 10));
         velocityY.push(random(1, 10));
-        r.push(random(0, 255));
-        g.push(random(0, 255));
-        b.push(random(0, 255));
     }
 }
 
@@ -24,7 +21,6 @@ function draw() {
     fill("orange");
     makeBalls();
     moveBalls();
-    logEverything();
 }
 
 function makeBalls() {
@@ -57,10 +53,8 @@ function moveBalls() {
 function mouseClicked() {
     ballX.push(random(0, width));
     ballY.push(random(0, height));
-    ballR.push(random(1, 150));
+    ballR.push(random(1, 80));
     velocityX.push(random(1, 10));
     velocityY.push(random(1, 10));
-    r.push(random(0, 255));
-    g.push(random(0, 255));
-    b.push(random(0, 255));
+
 }
